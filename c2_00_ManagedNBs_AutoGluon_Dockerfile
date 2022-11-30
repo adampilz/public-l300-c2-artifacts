@@ -1,0 +1,8 @@
+FROM gcr.io/deeplearning-platform-release/rapids-gpu
+
+COPY . /opt/app
+
+WORKDIR /opt/app
+
+RUN pip3 install -U cython
+RUN pip3 install -U autogluon
